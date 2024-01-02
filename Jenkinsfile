@@ -4,7 +4,7 @@ pipeline {
         stage('Back-end') {
             agent {
                 docker {
-                    image 'maven:latest'
+                    image 'maven:3.8.6'
                     args '-v $HOME/.m2:/root/.m2'
                 }
             }
